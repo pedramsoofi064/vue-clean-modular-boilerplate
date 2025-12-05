@@ -1,0 +1,151 @@
+@use "../abstracts" as *;
+
+@mixin mq($value, $type: "max") {
+  // Ensure the provided type is either 'min' or 'max' or 'range'
+  @if $type != min and $type != max and $type != range {
+    @warn "Invalid media query type. Please use 'min', 'max', or 'range'.";
+  }
+
+  $min-value: null;
+  $max-value: null;
+
+  // Check if the value is a key in the breakpoints map
+  @if type-of($value) == list {
+    $min-value: map-get($breakpoints, nth($value, 1));
+    $max-value: map-get($breakpoints, nth($value, 2));
+  } @else if map-has-key($breakpoints, $value) {
+    $min-value: map-get($breakpoints, $value);
+    $max-value: $min-value;
+  } @else {
+    $min-value: $value;
+    $max-value: $value;
+  }
+
+  // Generate the media query
+  @if $type == min {
+    @media only screen and (min-width: $min-value) {
+      @content;
+    }
+  } @else if $type == max {
+    @media only screen and (max-width: $max-value) {
+      @content;
+    }
+  } @else if $type == range {
+    @media only screen and (min-width: $min-value) and (max-width: $max-value) {
+      @content;
+    }
+  }
+}
+
+@mixin flex($dir: row, $wrap: nowrap, $align: flex-start, $justify: flex-start) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin overlay($background: linear-gradient(180deg, rgba(0, 19, 51, 0.25) 0%, rgba(0, 14, 38, 0.4) 100%)) {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100%;
+  background: $background;
+}
+
+@mixin ellipsis-overflow() {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  word-break: keep-all;
+}
+
+$is-scrollbar-animation-exists: false;
+
+@mixin keyframe-scrollbar-gen($scrollbar-var-name, $thumb-background-color, $track-background-color) {
+  @if not $is-scrollbar-animation-exists {
+    $is-scrollbar-animation-exists: true !global;
+
+    @at-root {
+      @keyframes scrollbar-fade-in {
+        0% {
+          #{$scrollbar-var-name}: $track-background-color;
+        }
+
+        100% {
+          #{$scrollbar-var-name}: $thumb-background-color;
+        }
+      }
+
+      @keyframes scrollbar-fade-out {
+        0% {
+          #{$scrollbar-var-name}: $thumb-background-color;
+        }
+
+        100% {
+          #{$scrollbar-var-name}: $track-background-color;
+        }
+      }
+    }
+  }
+}
+
+@mixin scrollbar(
+  $thumb-background-color: var(--palette-gray-300),
+  $track-background-color: var(--palette-bg-1),
+  $width: 7px,
+  $stable: false,
+  $transition: true,
+  $transition-duration: 0.8s
+) {
+  $scrollbar-var-name: "--scrollbar-background-color";
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  @if $stable {
+    scrollbar-gutter: stable;
+  }
+
+  @if $transition {
+    @include keyframe-scrollbar-gen($scrollbar-var-name, $thumb-background-color, $track-background-color);
+
+    animation: scrollbar-fade-out $transition-duration ease-in-out forwards;
+
+    &:hover {
+      animation: scrollbar-fade-in $transition-duration ease-in-out forwards;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: calc($width + 8px);
+    height: calc($width + 8px);
+    background-color: $track-background-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: $border-radius-pill;
+    border: 4px solid $track-background-color;
+    background-color: if($transition, var(#{$scrollbar-var-name}), $thumb-background-color);
+  }
+
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-corner {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+.infra-svg-loader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: var(--icon-width, var(--current-width));
+  height: var(--icon-height, var(--current-height));
+  background-color: var(--icon-background-color);
+  color: var(--icon-color, var(--current-color));
+  max-width: 100%;
+}
+
+@supports (-webkit-appearance: none) {
+  .infra-svg-loader {
+    align-items: normal;
+  }
+}

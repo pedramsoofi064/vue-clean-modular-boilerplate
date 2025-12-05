@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@user-interface/*": ["./src/user-interface/*"],
+      "@business-logic/*": ["./src/business-logic/*"],
+      "@cross-cutting/*": ["./shared-kernel/cross-cutting/*"],
+      "@shared-kernel/*": ["./shared-kernel/*"],
+      "@/*": ["./src/*"]
+    },
+    "typeRoots": ["./components.d.ts", "./auto-imports.d.ts"]
+  },
+  "exclude": ["node_modules", "dist"]
+}

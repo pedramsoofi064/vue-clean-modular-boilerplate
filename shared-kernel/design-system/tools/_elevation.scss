@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+@mixin elevation($level: 1) {
+  $root: &;
+
+  @at-root [theme="light"] {
+    #{$root} {
+      @include light-elevation($level, $base: #000);
+    }
+  }
+
+  @at-root [theme="dark"] {
+    #{$root} {
+      @include dark-elevation($level, $base: #fff);
+    }
+  }
+}

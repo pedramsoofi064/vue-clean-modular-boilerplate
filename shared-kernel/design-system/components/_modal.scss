@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+%delete-modal {
+  @include typography(regular-16);
+  @include flex($dir: column);
+  gap: space(4);
+
+  color: var(--palette-text-main-2);
+
+  p:nth-child(2) {
+    @include typography(regular-12);
+    color: var(--palette-text-main-3);
+  }
+
+  span {
+    @include typography(medium-16);
+    color: var(--palette-text-main-1);
+  }
+}
+
+@mixin details-modal {
+  @include flex($dir: column);
+  gap: space(2);
+
+  &__info {
+    @include flex($dir: column);
+    gap: space(1);
+  }
+
+  &__content {
+    @include flex();
+    gap: space(2);
+  }
+
+  &__sub-title,
+  &__title {
+    @include typography(medium-14);
+  }
+
+  &__title {
+    width: 160px;
+
+    color: var(--palette-text-main-3);
+  }
+
+  &__sub-title {
+    color: var(--palette-text-main-1);
+  }
+
+  &__badge-list {
+    @include flex($wrap: wrap);
+    gap: space(2);
+  }
+}

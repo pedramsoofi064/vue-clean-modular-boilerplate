@@ -1,0 +1,149 @@
+{
+  "header": {
+    "mainPage": "Home",
+    "item1": "Item 1",
+    "item2": "Item 2",
+    "item3": "Item 3",
+    "apply": "Careers",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "companyName": "Lorem Ipsum"
+  },
+  "footer": {
+    "companyName": "Lorem Ipsum",
+    "companyDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "applyBtn": "Apply for Job",
+    "followUs": "Follow us on social media"
+  },
+  "status": {
+    "inProgress": "In Progress",
+    "completed": "Completed"
+  },
+  "item1": {
+    "title": "Item 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  "item2": {
+    "title": "Item 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  "item3": {
+    "title": "Item 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  "contactUs": {
+    "cellphone": "+1 (555) 000-0000",
+    "phones": "+1 (555) 000-0000, +1 (555) 000-0001",
+    "email": "lorem@ipsum.com",
+    "mainAddress": "Head Office: Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "airportAddress": "Branch Office: Sed do eiusmod tempor incididunt ut labore",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "message": "Message",
+      "messagePlaceHolder": "Enter your message",
+      "send": "Send"
+    },
+    "successMessage": "Your comment submitted successfully",
+    "errorMessage": "Error in Submiting comment"
+  },
+  "mainPage": {
+    "mainHero": {
+      "companyName": "Lorem Ipsum",
+      "companySlogan": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "companyDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "applyBtn": "Apply for Job"
+    },
+
+    "services": {
+      "title": "Our Services",
+      "description": "The services we provide",
+      "titles": {
+        "templateText": "Template Text"
+      },
+      "descriptions": {
+        "templateText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      }
+    },
+    "certificates": {
+      "title": "Certificates",
+      "subtitle": "Company Certificates",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with us"
+    }
+  },
+  "apply": {
+    "title": "Job Application",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "cellphone": "+1 (555) 000-0000",
+    "phones": "+1 (555) 000-0000, +1 (555) 000-0001",
+    "email": "lorem@ipsum.com",
+    "mainAddress": "Head Office: Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "airportAddress": "Branch Office: Sed do eiusmod tempor incididunt ut labore",
+    "form": {
+      "fullname": "Full Name",
+      "birthDate": "Date of Birth",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "marriageStatus": "Marital Status",
+      "single": "Single",
+      "married": "Married",
+      "email": "Email",
+      "resume": "Resume File",
+      "resumeDesc": "Select Resume File",
+      "captcha": "Security Code",
+      "send": "Send",
+      "resumeMissed": "Please upload resume!",
+      "successMessage": "Your application has been successfully submitted",
+      "errorMessage": "Error in submitting application"
+    },
+    "doneTitle": "Your application has been successfully submitted.",
+    "doneDesc": "We will contact you soon.",
+    "doneBtnTitle": "Return to the homepage"
+  },
+  "machines": {
+    "title": "Machines",
+    "count": "Units"
+  },
+  "staffs": {
+    "title": "Staff and Positions"
+  },
+  "certificates": {
+    "title": "Certificates"
+  },
+  "about": {
+    "title": "About Us",
+    "p-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "p-2": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+    "p-3": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+    "p-4": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
+    "p-5": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+    "p-6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "p-7": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "p-8": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+    "p-9": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.",
+    "rank-1": "Rank 1",
+    "rank-3": "Rank 3",
+    "templateText": "Template Text",
+    "contactUs": "Contact Us"
+  },
+  "aboutUs": {
+    "item1": {
+      "title": "Item 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "item2": {
+      "title": "Item 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  },
+  "notFound": {
+    "message": "The page you are looking for does not exist",
+    "backButton": "Go Back"
+  }
+}

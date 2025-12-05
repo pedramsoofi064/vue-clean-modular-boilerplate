@@ -1,0 +1,71 @@
+$ff-primary: YekanBakhFaNum;
+$ff-secondary: YekanBakh;
+
+$font-url: "@shared-kernel/design-system/abstracts/fonts";
+
+$font-faces: (
+  $ff-primary: (
+    300: (
+      font-style: normal,
+      font-weight: 300,
+      src: url("#{$font-url}/YekanBakhFaNum/YekanBakhFaNum-Light.woff2")
+        format("woff2"),
+    ),
+    400: (
+      font-style: normal,
+      font-weight: 400,
+      src: url("#{$font-url}/YekanBakhFaNum/YekanBakhFaNum-Regular.woff2")
+        format("woff2"),
+    ),
+    600: (
+      font-style: normal,
+      font-weight: 600,
+      src: url("#{$font-url}/YekanBakhFaNum/YekanBakhFaNum-SemiBold.woff2")
+        format("woff2"),
+    ),
+    700: (
+      font-style: normal,
+      font-weight: 700,
+      src: url("#{$font-url}/YekanBakhFaNum/YekanBakhFaNum-Bold.woff2")
+        format("woff2"),
+    ),
+    800: (
+      font-style: normal,
+      font-weight: 800,
+      src: url("#{$font-url}/YekanBakhFaNum/YekanBakhFaNum-ExtraBold.woff2")
+        format("woff2"),
+    ),
+  ),
+  $ff-secondary: (
+    300: (
+      font-style: normal,
+      font-weight: 300,
+      src: url("#{$font-url}/YekanBakh/YekanBakh-Light.woff2")
+        format("woff2"),
+    ),
+    400: (
+      font-style: normal,
+      font-weight: 400,
+      src: url("#{$font-url}/YekanBakh/YekanBakh-Regular.woff2")
+        format("woff2"),
+    ),
+    600: (
+      font-style: normal,
+      font-weight: 600,
+      src: url("#{$font-url}/YekanBakh/YekanBakh-SemiBold.woff2")
+        format("woff2"),
+    ),
+    700: (
+      font-style: normal,
+      font-weight: 700,
+      src: url("#{$font-url}/YekanBakh/YekanBakh-Bold.woff2")
+        format("woff2"),
+    ),
+    800: (
+      font-style: normal,
+      font-weight: 800,
+      src: url("#{$font-url}/YekanBakh/YekanBakh-ExtraBold.woff2")
+        format("woff2"),
+    ),
+  ),
+);

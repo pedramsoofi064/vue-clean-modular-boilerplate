@@ -1,0 +1,41 @@
+@use "../abstracts/_color" as *;
+
+$light-theme: (
+  // primary
+  primary-light: map-get($teal, 100),
+  primary: map-get($teal, 500),
+  primary-dark: map-get($teal, 600),
+  // secondary
+  secondary-light: map-get($gray, 400),
+  secondary: map-get($gray, 600),
+  secondary-dark: map-get($gray, 700),
+  // status
+  status-success: map-get($green, 500),
+  status-danger: map-get($red, 500),
+  status-warning: map-get($yellow, 500),
+  status-info: map-get($blue, 500),
+  // text
+  text-main-1: map-get($gray, 800),
+  text-main-2: map-get($gray, 700),
+  text-main-3: map-get($gray, 600),
+  text-main-4: map-get($gray, 500),
+  text-light: map-get($default, "white"),
+  text-success: map-get($green, 600),
+  text-danger: map-get($red, 600),
+  text-warning: map-get($yellow, 800),
+  text-info: map-get($blue, 600),
+  // background and surface,
+  bg-1: map-get($default, "white"),
+  bg-2: map-get($gray, 100),
+  bg-3: map-get($gray, 200),
+  bg-4: map-get($gray, 300),
+  surface-success: map-get($green, 100),
+  surface-danger: map-get($red, 100),
+  surface-warning: map-get($yellow, 100),
+  surface-info: map-get($blue, 100),
+  // outline
+  outline-1: map-get($gray, 100),
+  outline-2: map-get($gray, 200),
+  outline-3: map-get($gray, 300),
+  outline-4: map-get($gray, 400)
+);

@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+%form {
+  @include flex($dir: column, $justify: unset);
+  gap: space(3);
+}
+
+%form-section {
+  @include flex();
+  gap: space(12);
+}
+
+%form-title {
+  @include typography(bold-14);
+  @include flex($align: center, $justify: flex-end);
+  gap: space(3);
+
+  color: var(--palette-text-main-2);
+
+  min-width: 220px;
+}
+
+%form-fields {
+  width: 576px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: space(4);
+}

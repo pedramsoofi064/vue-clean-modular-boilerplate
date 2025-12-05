@@ -1,0 +1,18 @@
+@use "../themes" as *;
+@use "../abstracts/_color" as *;
+
+:root {
+  @each $theme-name, $theme in $themes {
+    &[theme="#{$theme-name}"] {
+      @each $name, $value in $theme {
+        --palette-#{$name}: #{$value};
+      }
+    }
+  }
+
+  @each $color-map-name, $color-map in $colors {
+    @each $color-name, $color-value in $color-map {
+      --palette-#{$color-map-name}-#{$color-name}: #{$color-value};
+    }
+  }
+}

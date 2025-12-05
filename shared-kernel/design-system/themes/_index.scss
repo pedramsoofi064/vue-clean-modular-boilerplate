@@ -1,0 +1,5 @@
+@use "./light-theme" as *;
+
+$themes: (
+  light: $light-theme,
+);

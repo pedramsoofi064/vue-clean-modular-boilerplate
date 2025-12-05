@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+@mixin typography($name: body1) {
+  $target: map-get($typography, default);
+  $level: map-get($target, $name);
+
+  @if $level {
+    font-size: map-get($level, font-size);
+    font-weight: map-get($level, font-weight);
+    line-height: map-get($level, line-height);
+  }
+}

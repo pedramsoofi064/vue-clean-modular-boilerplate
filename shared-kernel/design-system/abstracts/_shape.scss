@@ -1,0 +1,8 @@
+$border-radius-rg: 8px;
+$border-radius-sm: calc($border-radius-rg / 2);
+$border-radius-md: calc($border-radius-rg * 1.5);
+$border-radius-lg: $border-radius-rg * 2;
+$border-radius-xl: $border-radius-rg * 3;
+
+$border-radius-pill: 9999px;
+$border-radius-circle: 50%;

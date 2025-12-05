@@ -1,0 +1,9 @@
+{
+  "name": "infra-svg-loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fast-glob": "^3.3.2"
+  }
+}
