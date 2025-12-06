@@ -87,44 +87,48 @@ Component → Store → Service → Repository → Apollo Client → GraphQL API
 
 ### Modular Design
 
-Each module is self-contained and independent:
+Each module is self-contained and independent, with separate folders in `user-interface` and `business-logic`:
 
 ```
-module-name/
-├── user-interface/          # UI concerns
-│   ├── components/         # Module-specific components
-│   ├── store/             # Module state (Pinia)
-│   ├── router/            # Module routes
-│   ├── views/             # Module pages
-│   └── constants/         # Module constants
+src/
+├── user-interface/
+│   └── {module-name}/          # UI concerns
+│       ├── components/         # Module-specific components
+│       ├── store/             # Module state (Pinia)
+│       ├── router/            # Module routes
+│       ├── views/             # Module pages
+│       └── constants/         # Module constants
 │
-└── business-logic/         # Business concerns
-    ├── apollo/            # GraphQL queries
-    ├── repositories/      # Data access
-    └── services/          # Business logic
+└── business-logic/
+    └── {module-name}/          # Business concerns
+        ├── apollo/            # GraphQL queries
+        ├── repositories/      # Data access
+        └── services/          # Business logic
 ```
 
 **Example: Apply Module**
 
 ```
-apply/
+src/
 ├── user-interface/
-│   ├── store/
-│   │   ├── actions.store.js    # Store actions
-│   │   ├── state.store.js      # Store state
-│   │   └── index.js            # Store definition
-│   ├── views/
-│   │   └── apply.view.vue      # Apply page
-│   └── router/
-│       └── index.js            # Apply routes
+│   └── apply/
+│       ├── store/
+│       │   ├── actions.store.js    # Store actions
+│       │   ├── state.store.js      # Store state
+│       │   └── index.js            # Store definition
+│       ├── views/
+│       │   └── apply.view.vue      # Apply page
+│       └── router/
+│           └── index.js            # Apply routes
 │
 └── business-logic/
-    ├── apollo/
-    │   └── queries.js          # GraphQL queries
-    ├── repositories/
-    │   └── apply.repository.js # Data access
-    └── services/
-        └── apply.service.js    # Business logic
+    └── apply/
+        ├── apollo/
+        │   └── queries.js          # GraphQL queries
+        ├── repositories/
+        │   └── apply.repository.js # Data access
+        └── services/
+            └── apply.service.js    # Business logic
 ```
 
 ## 🔑 Key Concepts
